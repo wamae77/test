@@ -11,6 +11,7 @@ publishing {
             artifactId = "fingerprint-bio-scanner"
             version = "1.0"
 
+            artifact(File("./libs/T5AirSnap-release_2.5.1.aar"))
             afterEvaluate {
                 from(components["release"])
             }
